@@ -1,0 +1,18 @@
+#!/bin/bash
+
+random=$(( RANDOM % 10 + 5 ))
+echo "random no is $random"
+
+function odd()
+{
+no=$1
+if [ $(($no%2)) -eq 1 ]
+ then
+  echo "number is odd number"
+ else
+  echo "number is even number"
+ fi
+}
+
+
+odd random
